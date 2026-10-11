@@ -67,7 +67,7 @@ You may need to allow installs from your browser or file manager the first time.
 
 ### Credits
 
-Big thanks to [@Galvestz](https://x.com/Galvestz). The widget design is inspired by their widgets concept, and the icons in OneWeather are theirs. Go follow them on [X](https://x.com/Galvestz).
+Big thanks to [@Galvestz](https://x.com/Galvestz). OneWeather's design, widgets included, is inspired by their concept, and the icons are theirs. Go follow them on [X](https://x.com/Galvestz).
 
 ### Feedback
 
