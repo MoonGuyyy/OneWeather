@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.jpg" width="100%" alt="OneWeather. A clearer outlook." />
+<img src="assets/banner.png" width="100%" alt="OneWeather. A clearer outlook." />
 
 <br />
 
