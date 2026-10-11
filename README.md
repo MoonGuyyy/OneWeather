@@ -25,16 +25,10 @@ Widgets take on the colors of the weather and the time of day. Choose a shiny bo
 
 <br />
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="assets/sunshine.png" alt="Hello, sunshine." />
-    </td>
-    <td width="50%" align="center">
-      <img src="assets/rain.png" alt="Rain happens." />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/sunshine.png" alt="Hello, sunshine." width="49%" />
+  <img src="assets/rain.png" alt="Rain happens." width="49%" />
+</p>
 
 <br />
 
