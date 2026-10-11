@@ -20,7 +20,7 @@
       <img src="assets/home.png" alt="Weather, in focus." />
       <br /><sub>The background follows the weather and the time of day. Soft forecast cards sit on top without hiding it.</sub>
     </td>
-    <td width="23%" align="center" valign="top">
+    <td width="24%" align="center" valign="top">
       <img src="assets/forecast.png" alt="A clearer day." />
       <br /><sub>The next 48 hours, then the week day by day. Most elements expand in place.</sub>
     </td>
