@@ -14,25 +14,14 @@
 
 <br />
 
-<img src="assets/home.png" width="100%" alt="Weather, in focus." />
-
-The background follows the weather and the time of day.<br />
-Soft forecast cards sit on top without hiding it.
+<img src="assets/showcase.svg" width="100%" alt="OneWeather showcase" />
 
 <br />
 
-<img src="assets/forecast.png" width="62%" alt="A clearer day." />
-
-The next 48 hours at a glance, then the week day by day.<br />
-Visibility, pressure, wind, sunrise and sunset, UV index, humidity and more.<br />
-Most elements expand in place, so you never get sent off to weather.com.
-
-<br />
-
-<img src="assets/widgets.png" width="100%" alt="At home." />
-
-Widgets that take on the colors of the weather and the time of day.<br />
-Choose a shiny border or a One UI style blurred look.
+The background follows the weather and the time of day. Soft forecast cards sit on top without hiding it.<br />
+The next 48 hours at a glance, then the week day by day. Visibility, pressure, wind, sunrise and sunset, UV index, humidity and more.<br />
+Most elements expand in place, so you never get sent off to weather.com.<br />
+Widgets take on the colors of the weather and the time of day. Choose a shiny border or a One UI style blurred look.
 
 <br />
 
