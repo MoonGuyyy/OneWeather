@@ -26,8 +26,8 @@ Widgets take on the colors of the weather and the time of day. Choose a shiny bo
 <br />
 
 <p align="center">
-  <img src="assets/sunshine.png" alt="Hello, sunshine." width="49%" />
-  <img src="assets/rain.png" alt="Rain happens." width="49%" />
+  <img src="assets/sunshine.png" alt="Hello, sunshine." width="47%" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/rain.png" alt="Rain happens." width="47%" />
 </p>
 
 <br />
