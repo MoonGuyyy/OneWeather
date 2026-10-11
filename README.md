@@ -14,19 +14,24 @@
 
 <br />
 
+<img src="assets/outlook.png" width="100%" alt="A clearer outlook." />
+
+<br />
+
+The background follows the weather and the time of day. Soft forecast cards sit on top without hiding it.<br />
+The next 48 hours at a glance, then the week day by day. Visibility, pressure, wind, sunrise and sunset, UV index, humidity and more.<br />
+Most elements expand in place, so you never get sent off to weather.com.<br />
+Widgets take on the colors of the weather and the time of day. Choose a shiny border or a One UI style blurred look.
+
+<br />
+
 <table>
   <tr>
-    <td width="38%" align="center" valign="top">
-      <img src="assets/home.png" alt="Weather, in focus." />
-      <br /><sub>The background follows the weather and the time of day. Soft forecast cards sit on top without hiding it.</sub>
+    <td width="50%" align="center">
+      <img src="assets/sunshine.png" alt="Hello, sunshine." />
     </td>
-    <td width="24%" align="center" valign="top">
-      <img src="assets/forecast.png" alt="A clearer day." />
-      <br /><sub>The next 48 hours, then the week day by day. Most elements expand in place.</sub>
-    </td>
-    <td width="38%" align="center" valign="top">
-      <img src="assets/widgets.png" alt="At home." />
-      <br /><sub>Widgets take on the colors of the weather. Choose a shiny border or a One UI style blurred look.</sub>
+    <td width="50%" align="center">
+      <img src="assets/rain.png" alt="Rain happens." />
     </td>
   </tr>
 </table>
