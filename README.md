@@ -38,7 +38,7 @@ Widgets take on the colors of the weather and the time of day. Choose a shiny bo
 
 ### Download
 
-**v1.0** is coming soon.
+**v1.0** is out now. Download the APK from Releases.
 
 <div align="center">
   <a href="https://github.com/MoonGuyyy/OneWeather/releases/latest"><img src="https://img.shields.io/badge/Download_APK-2d4fd6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" /></a>
