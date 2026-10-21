@@ -1,0 +1,13 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="124dp" android:minHeight="56dp"
+    android:minResizeWidth="124dp" android:minResizeHeight="56dp"
+    android:targetCellWidth="2" android:targetCellHeight="1"
+    android:initialLayout="@layout/widget_lock_weather_2x1" android:initialKeyguardLayout="@layout/widget_lock_weather_2x1"
+    android:previewLayout="@layout/widget_lock_weather_2x1_preview"
+    android:resizeMode="none" android:widgetCategory="0x2002"
+    android:widgetFeatures="configuration_optional" android:updatePeriodMillis="1800000"
+    app:initialLayoutSmall="@layout/widget_lock_weather_2x1"
+    app:monotoneInitialLayoutSmall="@layout/widget_lock_weather_2x1"
+    app:previewLayoutSmall="@layout/widget_lock_weather_2x1_preview"
+    app:monotonePreviewLayoutSmall="@layout/widget_lock_weather_2x1_preview"
+    app:targetHost="lock_and_aod" app:widgetSize="small" app:widgetStyle="monotone" />

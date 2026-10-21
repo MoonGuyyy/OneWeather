@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="110dp"
+    android:minHeight="60dp"
+    android:targetCellWidth="2"
+    android:targetCellHeight="1"
+    android:minResizeWidth="96dp"
+    android:minResizeHeight="50dp"
+    android:maxResizeWidth="600dp"
+    android:maxResizeHeight="600dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_weather_artwork_pill"
+    android:previewLayout="@layout/widget_weather_preview_compact"
+    android:previewImage="@drawable/widget_preview_compact"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:widgetFeatures="reconfigurable"
+    android:configure="com.moon.weather.widget.WeatherWidgetConfigureActivity"
+    app:previewLayoutSmall="@layout/widget_preview_weather_180x80"
+    app:previewLayoutMedium="@layout/widget_preview_weather_170x170"
+    app:allowMultipleSizes="true"
+    app:widgetStyle="colorful"
+    app:previewSize="small|medium"
+    app:widgetSize="small|wideSmall|medium|large|extraLarge|extraLargeLong"
+    app:featuredWidget="small|medium" />
+
+
+

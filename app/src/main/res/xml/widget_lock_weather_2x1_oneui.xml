@@ -1,0 +1,6 @@
+<samsung-appwidget-info xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:allowMultipleSizes="false" app:initialLayoutSmall="@layout/widget_lock_weather_2x1"
+    app:monotoneInitialLayoutSmall="@layout/widget_lock_weather_2x1"
+    app:previewLayoutSmall="@layout/widget_lock_weather_2x1_preview"
+    app:monotonePreviewLayoutSmall="@layout/widget_lock_weather_2x1_preview"
+    app:targetHost="lock_and_aod" app:widgetSize="small" app:widgetStyle="monotone" />
