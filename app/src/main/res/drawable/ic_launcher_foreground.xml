@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preserve the original artwork. Adaptive icons expand their layers to 150%
+     of the visible bounds, so a proportional 1/6 inset restores the original
+     full tile inside the mask at every launcher size and display density. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:inset="16.666667%">
+    <bitmap android:src="@drawable/ic_launcher_foreground_image"
+        android:gravity="fill" android:filter="true" />
+</inset>
