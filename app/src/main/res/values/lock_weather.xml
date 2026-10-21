@@ -1,0 +1,5 @@
+<resources>
+    <string name="lock_weather_small_name">Lock screen weather 1×1</string>
+    <string name="lock_weather_wide_name">Lock screen weather 2×1</string>
+    <string name="lock_weather_unavailable">Weather unavailable</string>
+</resources>
