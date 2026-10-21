@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_glass_background">#6618181C</color>
+    <!-- Samsung One UI Color Palette (Dark) -->
+    <color name="sesl_background">#000000</color>
+    <color name="sesl_card_bg">#18181A</color>
+    <color name="sesl_card_blur_bg">#E618181A</color>
+    <color name="sesl_card_blur_inner">#F2222226</color>
+    
+    <color name="sesl_primary_text">#F5F5F7</color>
+    <color name="sesl_secondary_text">#9898A0</color>
+    <color name="sesl_subtle_text">#636366</color>
+    
+    <color name="sesl_accent">#3E95FF</color>
+    <color name="sesl_accent_subtle">#1A3358</color>
+    <color name="sesl_chip_bg">#252528</color>
+    <color name="sesl_dropdown_bg">#252528</color>
+    <color name="sesl_divider">#14FFFFFF</color>
+</resources>
