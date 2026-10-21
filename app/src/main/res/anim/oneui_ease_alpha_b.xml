@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Opacity must stay within 0..1. Overshooting on the fade back to 1 can wrap
+     the native shader paint alpha, making the two green dots disappear. -->
+<pathInterpolator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:controlX1="0.497" android:controlY1="1.0"
+    android:controlX2="0.605" android:controlY2="1.0" />
