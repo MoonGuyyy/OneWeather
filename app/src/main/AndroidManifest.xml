@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Widget weather refresh is a core feature that requires network access while idle. -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Weather"
+        tools:targetApi="31">
+        <activity
+            android:name=".widget.WeatherWidgetConfigureActivity"
+            android:exported="true"
+            android:label="@string/widget_settings_title"
+            android:theme="@style/Theme.Weather.WidgetConfiguration">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".widget.WeatherWidgetRefreshReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".widget.WeatherWidgetProvider"
+            android:exported="true"
+            android:label="@string/weather_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_widget_info" />
+        </receiver>
+
+        <receiver android:name=".widget.WeatherWidgetCompactProvider" android:exported="true"
+            android:label="@string/weather_widget_compact_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/weather_widget_compact_info" />
+        </receiver>
+        <receiver android:name=".widget.WeatherWidgetSquareProvider" android:exported="true"
+            android:label="@string/weather_widget_square_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/weather_widget_square_info" />
+        </receiver>
+        <receiver android:name=".widget.WeatherWidgetStripProvider" android:exported="true"
+            android:label="@string/weather_widget_strip_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/weather_widget_strip_info" />
+        </receiver>
+
+        <receiver android:name=".widget.WeatherLockScreenSmallProvider" android:exported="true"
+            android:label="@string/lock_weather_small_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_lock_weather_1x1_info" />
+            <meta-data android:name="samsung.appwidget.monotone.info" android:resource="@xml/widget_lock_weather_1x1_oneui" />
+        </receiver>
+        <receiver android:name=".widget.WeatherLockScreenWideProvider" android:exported="true"
+            android:label="@string/lock_weather_wide_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_lock_weather_2x1_info" />
+            <meta-data android:name="samsung.appwidget.monotone.info" android:resource="@xml/widget_lock_weather_2x1_oneui" />
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Weather">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
