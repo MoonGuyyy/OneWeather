@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dropdown_popup_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="180dp"
+    android:orientation="vertical"
+    android:paddingVertical="8dp"
+    android:background="@drawable/widget_config_dropdown_bg"
+    android:elevation="16dp"
+    android:clipToOutline="true">
+
+    <ScrollView
+        android:id="@+id/dropdown_popup_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:id="@+id/dropdown_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>

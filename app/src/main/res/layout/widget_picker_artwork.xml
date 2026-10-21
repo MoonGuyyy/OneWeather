@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/background" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <ImageView android:id="@+id/widget_artwork" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="fitCenter" android:contentDescription="@string/widget_preview_hint" />
+</FrameLayout>

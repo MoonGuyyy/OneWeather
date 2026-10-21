@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_config_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sesl_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/config_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Scrollable Settings Content with pixel-level fading at the preview boundary -->
+        <com.moon.weather.widget.FadingNestedScrollView
+            android:id="@+id/config_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:clipToPadding="false"
+            android:paddingHorizontal="12dp"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:id="@+id/config_scroll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Spacer matching the pinned preview container height -->
+                <View
+                    android:id="@+id/config_preview_spacer"
+                    android:layout_width="match_parent"
+                    android:layout_height="262dp" />
+
+                <!-- Location Section -->
+                <TextView
+                    android:id="@+id/config_location_section_title"
+                    style="@style/WidgetConfig.Section"
+                    android:text="@string/widget_location_section" />
+
+                <LinearLayout
+                    android:id="@+id/config_location_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/widget_config_card"
+                    android:clipToOutline="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="56dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/widget_location_title"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/sesl_primary_text" />
+
+                        <!-- Samsung One UI Dropdown Button on the right -->
+                        <LinearLayout
+                            android:id="@+id/config_location_dropdown_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="38dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="10dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:background="@drawable/widget_config_dropdown_button_bg"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <TextView
+                                android:id="@+id/config_location_selected_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/widget_location_current"
+                                android:textSize="14sp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/sesl_primary_text" />
+
+                            <ImageView
+                                android:id="@+id/config_location_dropdown_icon"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginStart="4dp"
+                                android:src="@drawable/ic_arrow_drop_down"
+                                android:tint="@color/sesl_secondary_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Widget Layout Section (No Adaptive!) -->
+                <TextView
+                    android:id="@+id/config_layout_section_title"
+                    style="@style/WidgetConfig.Section"
+                    android:text="@string/widget_layout_section" />
+
+                <LinearLayout
+                    android:id="@+id/config_card_styles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/widget_config_card"
+                    android:clipToOutline="true" />
+
+                <!-- Background Style Section -->
+                <TextView
+                    android:id="@+id/config_background_section_title"
+                    style="@style/WidgetConfig.Section"
+                    android:text="@string/widget_background_section" />
+
+                <LinearLayout
+                    android:id="@+id/config_background_styles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/widget_config_card"
+                    android:clipToOutline="true" />
+
+            </LinearLayout>
+        </com.moon.weather.widget.FadingNestedScrollView>
+
+        <!-- Pinned Widget Preview Container: STAYS PUT IN PLACE -->
+        <LinearLayout
+            android:id="@+id/config_preview_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:background="@android:color/transparent">
+
+            <FrameLayout
+                android:id="@+id/config_preview"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/widget_config_preview"
+                android:clipToOutline="true"
+                android:importantForAccessibility="noHideDescendants" />
+        </LinearLayout>
+
+        <!-- Floating Actions Pill -->
+        <LinearLayout
+            android:id="@+id/config_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/widget_config_actions"
+            android:clipToOutline="true"
+            android:elevation="6dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/config_cancel"
+                style="@style/WidgetConfig.Action"
+                android:text="@string/widget_cancel" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@color/sesl_divider" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/config_save"
+                style="@style/WidgetConfig.Action"
+                android:text="@string/widget_save" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
